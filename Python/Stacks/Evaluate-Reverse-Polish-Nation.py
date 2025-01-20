@@ -9,16 +9,16 @@ def evalRPN(tokens):
             stack.append(int(a + b))
         elif c == '-':
             a, b = stack.pop(), stack.pop()
-            stack.append(int(a - b))
+            stack.append(int(b - a))
         elif c == '*':
             a, b = stack.pop(), stack.pop()
             stack.append(int(a * b))
         elif c == '/':
             a, b = stack.pop(), stack.pop()
-            stack.append(int(a // b))
+            stack.append(int(float(b) / a))
         else:
             stack.append(int(c))
     return stack.pop()
 
-tokens=["2","1","+","3","*"]
+tokens = ["10","6","9","3","+","-11","*","/","*","17","+","5","+"]
 print(evalRPN(tokens))

@@ -1,4 +1,5 @@
 #Given an integer array nums and an integer k, return the k most frequent elements within the array.
+#Time Complexity: O(n) || Space Complexity: O(n)
 
 def topKFrequent(nums, k):
     count = {}

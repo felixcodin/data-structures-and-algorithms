@@ -1,3 +1,5 @@
+# LeetCode 2115. Find All Possible Recipes from Given Supplies
+
 from typing import List
 from collections import defaultdict, deque
 
